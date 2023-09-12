@@ -1,0 +1,27 @@
+Port      Name               Status       Vlan       Duplex  Speed Type 
+Fa0/1     WiFi Managemant    connected    100        a-full  a-100 10/100BaseTX
+Fa0/2     WiFi               connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/3     C881-VPN-Main      connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/4     wifi               connected    103        a-full  a-100 10/100BaseTX
+Fa0/5     Mikrotik           connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/6                        connected    1          a-full  a-100 10/100BaseTX
+Fa0/7                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/8                        connected    1          a-full  a-100 10/100BaseTX
+Fa0/9                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/10    DEVA4004           connected    1          a-full  a-100 10/100BaseTX
+Fa0/11                       connected    1          a-full  a-100 10/100BaseTX
+Fa0/12    SL1_mgmt           connected    96         a-full  a-100 10/100BaseTX
+Fa0/13    Wifi_2et           connected    103        a-full  a-100 10/100BaseTX
+Fa0/14                       connected    1          a-full  a-100 10/100BaseTX
+Fa0/15                       connected    100        a-full  a-100 10/100BaseTX
+Fa0/16    SNR_ERD            connected    100        a-half   a-10 10/100BaseTX
+Fa0/17                       connected    1          a-full  a-100 10/100BaseTX
+Fa0/18                       connected    1          a-full  a-100 10/100BaseTX
+Fa0/19    TechNet            connected    109        a-full  a-100 10/100BaseTX
+Fa0/20    TechNet            connected    109        a-full  a-100 10/100BaseTX
+Fa0/21    Voip_NS500         connected    104        a-full  a-100 10/100BaseTX
+Fa0/22    Voip_NS500         connected    104        a-full  a-100 10/100BaseTX
+Fa0/23                       monitoring   1          a-full  a-100 10/100BaseTX
+Fa0/24    mirrow             notconnect   1            auto   auto 10/100BaseTX
+Gi0/1                        connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi0/2     MTS_Internet       notconnect   1            auto   auto Not Present

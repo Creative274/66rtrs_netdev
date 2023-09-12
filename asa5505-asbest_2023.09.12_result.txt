@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Asbest(config)#  object network SERVERS-FILIAL
+
+ASA5505-Asbest(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Asbest(config-network-object)#  end
+
+ASA5505-Asbest# 
+Building configuration...
+Cryptochecksum: f817189c b129ddc7 4ca72f3f 1e582cba 
+
+17109 bytes copied in 1.510 secs (17109 bytes/sec)
+[OK]

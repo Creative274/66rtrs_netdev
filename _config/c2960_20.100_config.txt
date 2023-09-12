@@ -1,0 +1,314 @@
+Using 7988 out of 65536 bytes
+!
+! Last configuration change at 11:58:56 Yekt Sat Apr 24 2021 by velin
+! NVRAM config last updated at 11:59:27 Yekt Sat Apr 24 2021 by velin
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec localtime
+service password-encryption
+service unsupported-transceiver
+!
+hostname Switch100
+!
+boot-start-marker
+boot-end-marker
+!
+!
+username velin privilege 15 secret 5 $1$IQsQ$GLt6K8KKMbpeWcHWou1/W0
+username raska.pv privilege 15 secret 5 $1$QuGj$oQkZ1RAcDY5fXXyEzyqAu0
+username sas privilege 15 secret 5 $1$Q78r$IUzUYKZ2hYWgYxbIQR8so.
+aaa new-model
+!
+!
+aaa authentication login default local
+aaa authorization exec default local 
+!
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone Yekt 5 0
+system mtu routing 1500
+vtp mode transparent
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+ip domain-name chelortpc
+ip name-server 10.174.10.174
+!
+!
+crypto pki trustpoint TP-self-signed-2423734272
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-2423734272
+ revocation-check none
+ rsakeypair TP-self-signed-2423734272
+!
+!
+crypto pki certificate chain TP-self-signed-2423734272
+ certificate self-signed 01 nvram:IOS-Self-Sig#1.cer
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+vlan 10,96-98 
+!
+vlan 100
+ name Management
+!
+vlan 101 
+!
+vlan 103
+ name wifi
+!
+vlan 104,107-111,170,555,666,776,4008 
+!
+!
+!
+!
+!
+interface FastEthernet0/1
+ description WiFi Managemant
+ switchport access vlan 100
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+ no cdp enable
+!
+interface FastEthernet0/2
+ description WiFi
+ switchport trunk allowed vlan 1,10,107,108
+ switchport mode trunk
+ load-interval 30
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+!
+interface FastEthernet0/3
+ description C881-VPN-Main
+ switchport trunk allowed vlan 1,100,108,4008
+ switchport mode trunk
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/4
+ description wifi
+ switchport access vlan 103
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ no cdp enable
+ spanning-tree bpdufilter enable
+!
+interface FastEthernet0/5
+ description Mikrotik
+ switchport trunk allowed vlan 1,10,100,101,107,111,555
+ switchport mode trunk
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+ no cdp enable
+ spanning-tree bpdufilter enable
+!
+interface FastEthernet0/6
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/7
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/8
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/9
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/10
+ description DEVA4004
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/11
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/12
+ description SL1_mgmt
+ switchport access vlan 96
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/13
+ description Wifi_2et
+ switchport access vlan 103
+ switchport mode access
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/14
+ switchport mode access
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+ no cdp enable
+!
+interface FastEthernet0/15
+ switchport access vlan 100
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/16
+ description SNR_ERD
+ switchport access vlan 100
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/17
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/18
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/19
+ description TechNet
+ switchport access vlan 109
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+ no cdp enable
+!
+interface FastEthernet0/20
+ description TechNet
+ switchport access vlan 109
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+ no cdp enable
+!
+interface FastEthernet0/21
+ description Voip_NS500
+ switchport access vlan 104
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/22
+ description Voip_NS500
+ switchport access vlan 104
+ load-interval 30
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/23
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface FastEthernet0/24
+ description mirrow
+ snmp trap mac-notification change added
+ snmp trap mac-notification change removed
+ storm-control broadcast level 1.00 0.50
+ storm-control multicast level 10.00
+!
+interface GigabitEthernet0/1
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+ description MTS_Internet
+ switchport trunk allowed vlan 170,4008
+ switchport mode trunk
+ load-interval 30
+!
+interface Vlan1
+ no ip address
+ no ip route-cache
+ shutdown
+!
+interface Vlan97
+ ip address 89.237.21.78 255.255.255.0
+ no ip route-cache
+ shutdown
+!
+interface Vlan100
+ ip address 10.174.20.100 255.255.255.0
+ no ip route-cache
+!
+ip default-gateway 10.174.20.1
+no ip http server
+no ip http secure-server
+!
+ip access-list standard SNMPACL
+ permit 10.174.10.30
+ permit 10.174.10.20
+ deny   any
+!
+snmp-server community Bang55UP12 RO SNMPACL
+snmp-server enable traps mac-notification change move threshold
+snmp-server host 10.174.10.20 Bang55UP12  mac-notification snmp
+!
+!
+no vstack
+!
+line con 0
+ exec-timeout 0 0
+line vty 0 3
+ exec-timeout 0 0
+line vty 4
+line vty 5 15
+!
+!
+monitor session 1 source interface Fa0/21
+monitor session 1 destination interface Fa0/23
+ntp server 10.174.20.1
+mac address-table notification change interval 15
+mac address-table notification change history-size 100
+mac address-table notification change
+end

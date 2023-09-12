@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Kamyshlov(config)#  object network SERVERS-FILIAL
+
+ASA5505-Kamyshlov(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Kamyshlov(config-network-object)#  end
+
+ASA5505-Kamyshlov# 
+Building configuration...
+Cryptochecksum: b75cb840 fa959305 fd4ac426 73d54d4d 
+
+16984 bytes copied in 1.290 secs (16984 bytes/sec)
+[OK]

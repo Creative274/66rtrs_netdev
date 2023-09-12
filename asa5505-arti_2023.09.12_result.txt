@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Arti(config)#  object network SERVERS-FILIAL
+
+ASA5505-Arti(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Arti(config-network-object)#  end
+
+ASA5505-Arti# 
+Building configuration...
+Cryptochecksum: 10edeca6 5ffbdbb1 8e2eb685 a56527f6 
+
+14696 bytes copied in 1.390 secs (14696 bytes/sec)
+[OK]

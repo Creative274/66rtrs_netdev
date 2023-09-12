@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Serov(config)#  object network SERVERS-FILIAL
+
+ASA5505-Serov(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Serov(config-network-object)#  end
+
+ASA5505-Serov# 
+Building configuration...
+Cryptochecksum: 833312bb 4ed699b6 4a7769ec acb64178 
+
+16941 bytes copied in 1.360 secs (16941 bytes/sec)
+[OK]

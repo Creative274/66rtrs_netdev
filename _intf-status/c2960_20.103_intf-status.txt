@@ -1,0 +1,27 @@
+Port      Name               Status       Vlan       Duplex  Speed Type 
+Fa0/1                        connected    101        a-full  a-100 10/100BaseTX
+Fa0/2                        connected    1          a-full  a-100 10/100BaseTX
+Fa0/3                        connected    1          a-full  a-100 10/100BaseTX
+Fa0/4                        notconnect   1            auto   auto 10/100BaseTX
+Fa0/5                        connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/6                        connected    18         a-full  a-100 10/100BaseTX
+Fa0/7                        connected    105        a-full  a-100 10/100BaseTX
+Fa0/8                        connected    18         a-full  a-100 10/100BaseTX
+Fa0/9     SW_Zal_pered       connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/10    RedPine            connected    101        a-full  a-100 10/100BaseTX
+Fa0/11                       connected    1          a-full  a-100 10/100BaseTX
+Fa0/12    TelemedikChel      connected    107        a-full  a-100 10/100BaseTX
+Fa0/13                       connected    96         a-half   a-10 10/100BaseTX
+Fa0/14                       notconnect   1            auto   auto 10/100BaseTX
+Fa0/15    VGTRK_Video        connected    18         a-full  a-100 10/100BaseTX
+Fa0/16    TO_CFM             connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/17                       connected    105        a-full  a-100 10/100BaseTX
+Fa0/18                       connected    1          a-full  a-100 10/100BaseTX
+Fa0/19                       connected    1          a-full  a-100 10/100BaseTX
+Fa0/20    Cam_telemedik      connected    18         a-full  a-100 10/100BaseTX
+Fa0/21                       connected    1          a-full  a-100 10/100BaseTX
+Fa0/22    Sklad              connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/23                       connected    103        a-full  a-100 10/100BaseTX
+Fa0/24                       connected    1          a-full  a-100 10/100BaseTX
+Gi0/1     To_Servernaya      connected    trunk      a-full a-1000 1000BaseLX SFP
+Gi0/2     to_sw_101          connected    trunk      a-full a-1000 10/100/1000BaseTX

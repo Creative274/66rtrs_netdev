@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-SukhoyLog(config)#  object network SERVERS-FILIAL
+
+ASA5505-SukhoyLog(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-SukhoyLog(config-network-object)#  end
+
+ASA5505-SukhoyLog# 
+Building configuration...
+Cryptochecksum: 4616008f 2cb531ea c72b7f9e 48744948 
+
+17167 bytes copied in 1.460 secs (17167 bytes/sec)
+[OK]

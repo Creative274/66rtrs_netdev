@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Novouralsk(config)#  object network SERVERS-FILIAL
+
+ASA5505-Novouralsk(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Novouralsk(config-network-object)#  end
+
+ASA5505-Novouralsk# 
+Building configuration...
+Cryptochecksum: 9565f5d0 48675e6d 4a57154a c4e2f3c1 
+
+15119 bytes copied in 1.390 secs (15119 bytes/sec)
+[OK]

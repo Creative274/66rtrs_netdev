@@ -1,0 +1,7 @@
+asa5505-polevskoy:
+  device_type: cisco_ios
+  host: 10.166.4.6
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22

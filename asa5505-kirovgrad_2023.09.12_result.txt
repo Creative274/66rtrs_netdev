@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Kirovgrad(config)#  object network SERVERS-FILIAL
+
+ASA5505-Kirovgrad(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Kirovgrad(config-network-object)#  end
+
+ASA5505-Kirovgrad# 
+Building configuration...
+Cryptochecksum: f4d09946 99dac047 079343d2 f9671cee 
+
+16762 bytes copied in 1.410 secs (16762 bytes/sec)
+[OK]

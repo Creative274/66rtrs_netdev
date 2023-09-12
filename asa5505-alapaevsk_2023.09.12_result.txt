@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Alapaevsk(config)#  object network SERVERS-FILIAL
+
+ASA5505-Alapaevsk(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Alapaevsk(config-network-object)#  end
+
+ASA5505-Alapaevsk# 
+Building configuration...
+Cryptochecksum: c489072a 2a08b39d 44256828 9b969cb8 
+
+17009 bytes copied in 1.400 secs (17009 bytes/sec)
+[OK]

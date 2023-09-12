@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-NSergi(config)#  object network SERVERS-FILIAL
+
+ASA5505-NSergi(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-NSergi(config-network-object)#  end
+
+ASA5505-NSergi# 
+Building configuration...
+Cryptochecksum: 76172aba 09d09d9d 5e6658b5 0c1e953a 
+
+17460 bytes copied in 1.350 secs (17460 bytes/sec)
+[OK]

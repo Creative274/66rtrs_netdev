@@ -1,0 +1,153 @@
+Building configuration...
+
+Current configuration : 3590 bytes
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Switch_94
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$s1/p$h9cMNN1fTRoLo8ZYxxxJq/
+!
+!
+!
+no aaa new-model
+system mtu routing 1500
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-448487936
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-448487936
+ revocation-check none
+ rsakeypair TP-self-signed-448487936
+!
+!
+crypto pki certificate chain TP-self-signed-448487936
+ certificate self-signed 01
+  30820240 308201A9 A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 34343834 38373933 36301E17 0D393330 33303130 30303035 
+  375A170D 32303031 30313030 30303030 5A303031 2E302C06 03550403 1325494F 
+  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3434 38343837 
+  39333630 819F300D 06092A86 4886F70D 01010105 0003818D 00308189 02818100 
+  BBA6BBC4 781FB2B7 CC3ED9F1 65575A5B 3B2A5813 87E72F53 BADD714D 5B334666 
+  517A1E96 2C28EEB8 089C252E D09FBD62 7F2D2963 F01191A7 6D2B22F0 C96F0ECA 
+  0D9F2491 30CE5362 18AF50C5 11732EAE 72D2FE5A 2B201F25 B56156DD 3E615F37 
+  C674F9B3 3DDD8118 91B165D5 B52C9FD5 9BDF13FC AEAA96AF CD1798FA 42D153D3 
+  02030100 01A36A30 68300F06 03551D13 0101FF04 05300301 01FF3015 0603551D 
+  11040E30 0C820A53 77697463 685F3934 2E301F06 03551D23 04183016 80145352 
+  82021D16 DA83FEF2 AE89D0AA 7519AC41 04BF301D 0603551D 0E041604 14535282 
+  021D16DA 83FEF2AE 89D0AA75 19AC4104 BF300D06 092A8648 86F70D01 01040500 
+  03818100 02F77E0A 05CF2CFB 27DDBE0D EFD0A93A AE90F6FB D03073CE E8B1DD2F 
+  20BCA96C A6C867F1 1E573D22 6803D0D2 114494C6 C1DC68E6 D65BF6C4 926DF577 
+  74934894 F12F5770 DC9E2F88 750784B8 926F437D 50509A5A 9C98FDC2 2EE8B36D 
+  63160AEB 0A6E9A67 5611133B 0E19391D 6B36447A 6BDEDE9A 2D06548B 886AF7CD D9913C82
+  quit
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+!
+interface FastEthernet0/1
+ description MOD_1_MUX
+!
+interface FastEthernet0/2
+ description EATON_ups
+!
+interface FastEthernet0/3
+ description PRD_1_MUX
+!
+interface FastEthernet0/4
+ description RIELLO_1_MUX
+!
+interface FastEthernet0/5
+ description #Router_OIT
+!
+interface FastEthernet0/6
+ description CPK-M2
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+ description SPLICER
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+ description PRM_TRM
+!
+interface FastEthernet0/14
+ description PRM_REZERV_40
+!
+interface FastEthernet0/15
+ description #SDK_(NE_PEREKLUCHATb)
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+ description PRM_1_MUX
+!
+interface FastEthernet0/18
+ description PRD_2_MUX
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+ description MOXA
+!
+interface FastEthernet0/21
+ description NetPing
+!
+interface FastEthernet0/22
+ description REPLACER
+!
+interface FastEthernet0/23
+ description PRM_2_MUX
+!
+interface FastEthernet0/24
+ description RIELLO_2_MUX
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ ip address 192.168.250.2 255.255.255.0
+ no ip route-cache
+!
+ip default-gateway 192.168.250.3
+ip http server
+ip http secure-server
+snmp-server community public74 RO
+snmp-server community private74 RW
+snmp-server location Sokolovskoe_RTS
+snmp ifmib ifalias long
+snmp ifmib ifindex persist
+!
+line con 0
+line vty 0 4
+ password admin
+ login
+line vty 5 15
+ password admin
+ login
+!
+end

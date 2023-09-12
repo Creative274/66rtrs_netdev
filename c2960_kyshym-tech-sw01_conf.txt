@@ -1,0 +1,172 @@
+Building configuration...
+
+Current configuration : 3891 bytes
+!
+! No configuration change since last restart
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Switch53
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$LvGF$Q9CndlykCIiVjm5YlgDc4/
+!
+!
+!
+no aaa new-model
+clock timezone MSK 3
+system mtu routing 1500
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-2897620992
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-2897620992
+ revocation-check none
+ rsakeypair TP-self-signed-2897620992
+!
+!
+crypto pki certificate chain TP-self-signed-2897620992
+ certificate self-signed 01
+  30820241 308201AA A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 32383937 36323039 3932301E 170D3933 30333031 30303030 
+  35375A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D32 38393736 
+  32303939 3230819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+  8100B998 A3F484BD 6D92F976 573D7198 27E46117 B19B018B 4FBD4865 EB53E23D 
+  B9906516 5AC77EE2 71445E8D 8218DD5E 37A3A853 A088F1F9 4B8B81FF 6D769F0A 
+  481B9B7A 68CADE74 E0CC9BA0 7291031B 42D7D1AA 574A0E67 11496F2B 20542E31 
+  3BA41367 174C20C2 E7F81F3A 991D1A5E 7DEF5872 EC84E93B C18A2C1F BBC84E8C 
+  1BBB0203 010001A3 69306730 0F060355 1D130101 FF040530 030101FF 30140603 
+  551D1104 0D300B82 09537769 74636835 332E301F 0603551D 23041830 1680146B 
+  2A60F10F FE499D30 07AA8AD8 3692C477 98D49430 1D060355 1D0E0416 04146B2A 
+  60F10FFE 499D3007 AA8AD836 92C47798 D494300D 06092A86 4886F70D 01010405 
+  00038181 0093ABEE ED2FE92B 2269CA70 E82137DA E1F62166 D55BA2F0 8F363A58 
+  2F6219B2 A54F2FBE 33563659 5D63F9D3 782F4B75 02E8F3C5 5BB3BE45 5454C79C 
+  98174EB1 117ED605 CFA68012 6411ED64 26EDA530 DBC34052 29F5ED0A 5410CEF8 
+  2D7FABF2 A625F51B 1DF6DB31 ADEF2DD1 90F18BB8 190977CD C3724847 2AAF1093 
+  97A5776A F2
+  quit
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+!
+interface FastEthernet0/1
+ load-interval 30
+!
+interface FastEthernet0/2
+ load-interval 30
+!
+interface FastEthernet0/3
+ load-interval 30
+!
+interface FastEthernet0/4
+ load-interval 30
+!
+interface FastEthernet0/5
+ load-interval 30
+!
+interface FastEthernet0/6
+ load-interval 30
+!
+interface FastEthernet0/7
+ load-interval 30
+!
+interface FastEthernet0/8
+ load-interval 30
+!
+interface FastEthernet0/9
+ load-interval 30
+!
+interface FastEthernet0/10
+ load-interval 30
+!
+interface FastEthernet0/11
+ load-interval 30
+!
+interface FastEthernet0/12
+ load-interval 30
+!
+interface FastEthernet0/13
+ load-interval 30
+!
+interface FastEthernet0/14
+ description SDK_WLAN
+ switchport access vlan 11
+ load-interval 30
+!
+interface FastEthernet0/15
+ description SDK_WLAN
+ switchport access vlan 11
+ load-interval 30
+!
+interface FastEthernet0/16
+ description SDK_WLAN
+ switchport access vlan 11
+ load-interval 30
+!
+interface FastEthernet0/17
+ load-interval 30
+!
+interface FastEthernet0/18
+ load-interval 30
+!
+interface FastEthernet0/19
+ load-interval 30
+!
+interface FastEthernet0/20
+ load-interval 30
+!
+interface FastEthernet0/21
+ load-interval 30
+!
+interface FastEthernet0/22
+ switchport access vlan 140
+ load-interval 30
+!
+interface FastEthernet0/23
+ load-interval 30
+!
+interface FastEthernet0/24
+ load-interval 30
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,10,11,140
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+ switchport access vlan 10
+!
+interface Vlan1
+ ip address 192.168.250.2 255.255.255.0
+ no ip route-cache
+!
+ip default-gateway 192.168.250.3
+ip http server
+ip http secure-server
+snmp-server community ortpc RO
+!
+line con 0
+line vty 0 4
+ password admin
+ login
+line vty 5 15
+ password admin
+ login
+!
+ntp clock-period 36028700
+ntp server 192.168.250.3
+end

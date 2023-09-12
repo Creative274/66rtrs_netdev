@@ -1,0 +1,364 @@
+SVE-GURZ-CUCME-C3845:
+  device_type: cisco_ios
+  host: 10.166.100.1
+  password: SnmP@)23
+  secret: cisco
+  username: rtrs_admin
+  port: 22
+asa5505-polevskoy:
+  device_type: cisco_ios
+  host: 10.166.4.6
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-dvurechensk:
+  device_type: cisco_ios
+  host: 10.166.4.10
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-sysert:
+  device_type: cisco_ios
+  host: 10.166.4.14
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-karpinsk:
+  device_type: cisco_ios
+  host: 10.166.4.18
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-kirovgrad:
+  device_type: cisco_ios
+  host: 10.166.4.22
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-severouralsk:
+  device_type: cisco_ios
+  host: 10.166.4.26
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-beloyarskiy:
+  device_type: cisco_ios
+  host: 10.166.4.30
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-n_salda:
+  device_type: cisco_ios
+  host: 10.166.4.34
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-krasnoufimsk:
+  device_type: cisco_ios
+  host: 10.166.4.38
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-irbit:
+  device_type: cisco_ios
+  host: 10.166.4.42
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-sosva:
+  device_type: cisco_ios
+  host: 10.166.4.46
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-staroutkinsk:
+  device_type: cisco_ios
+  host: 10.166.4.50
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-rezh:
+  device_type: cisco_ios
+  host: 10.166.4.54
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-butka:
+  device_type: cisco_ios
+  host: 10.166.4.58
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-arti:
+  device_type: cisco_ios
+  host: 10.166.4.62
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-nizhneirginskoe:
+  device_type: cisco_ios
+  host: 10.166.4.66
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-shelkun:
+  device_type: cisco_ios
+  host: 10.166.4.70
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-pervouralsk:
+  device_type: cisco_ios
+  host: 10.166.4.74
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-novouralsk:
+  device_type: cisco_ios
+  host: 10.166.4.78
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-asbest:
+  device_type: cisco_ios
+  host: 10.166.4.82
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-n_sergy:
+  device_type: cisco_ios
+  host: 10.166.4.86
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-alapaevsk:
+  device_type: cisco_ios
+  host: 10.166.4.90
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-baikalovo:
+  device_type: cisco_ios
+  host: 10.166.4.94
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-zaikovo:
+  device_type: cisco_ios
+  host: 10.166.4.98
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-kamishlov:
+  device_type: cisco_ios
+  host: 10.166.4.102
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-suhoy_log:
+  device_type: cisco_ios
+  host: 10.166.4.106
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-baranchinskiy:
+  device_type: cisco_ios
+  host: 10.166.4.110
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-serov:
+  device_type: cisco_ios
+  host: 10.166.4.114
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-artemovskiy:
+  device_type: cisco_ios
+  host: 10.166.4.118
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-azanka:
+  device_type: cisco_ios
+  host: 10.166.4.122
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-afanasievskoe:
+  device_type: cisco_ios
+  host: 10.166.4.126
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-n_tagil:
+  device_type: cisco_ios
+  host: 10.166.4.130
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-k_uralskiy:
+  device_type: cisco_ios
+  host: 10.166.4.134
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-tugulim:
+  device_type: cisco_ios
+  host: 10.166.121.49
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-talitsa:
+  device_type: cisco_ios
+  host: 10.166.121.161
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-yushala:
+  device_type: cisco_ios
+  host: 10.166.121.57
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-pyshma:
+  device_type: cisco_ios
+  host: 85.235.52.208
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-tavda:
+  device_type: cisco_ios
+  host: 85.235.52.210
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-ivdel:
+  device_type: cisco_ios
+  host: 213.242.205.37
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-bisert:
+  device_type: cisco_ios
+  host: 213.242.199.201
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+AUP_Core_9300:
+  device_type: cisco_ios
+  host: 10.166.166.10
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+SVE-ASW1-3-EKB-C2960X:
+  device_type: cisco_ios
+  host: 10.166.166.11
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+SVE-ASW4-6-EKB-C2960X:
+  device_type: cisco_ios
+  host: 10.166.166.12
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+SVE-ASW7-EKB-C2960L:
+  device_type: cisco_ios
+  host: 10.166.166.13
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+SVE-GURZ-CORE-C3750:
+  device_type: cisco_ios
+  host: 10.166.166.16
+  password: SnmP@)23
+  secret: cisco
+  username: rtrs_admin
+  port: 22
+SVE-GURZ-ASW1-C3560:
+  device_type: cisco_ios
+  host: 10.166.166.17
+  password: SnmP@)23
+  secret: cisco
+  username: rtrs_admin
+  port: 22
+SVE-GURZ-ASW2-C3560:
+  device_type: cisco_ios
+  host: 10.166.166.19
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+SVE-GURZ-ASW3-C3560:
+  device_type: cisco_ios
+  host: 10.166.166.20
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+SVE-LUN-ASW1-C3560:
+  device_type: cisco_ios
+  host: 10.166.166.21
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+SVE-KOSM-ASW1-C3560V2:
+  device_type: cisco_ios
+  host: 10.166.100.41
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+SVE-SHAR-ASW-C3560-2:
+  device_type: cisco_ios
+  host: 10.166.166.33
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22

@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Beloyarskiy(config)#  object network SERVERS-FILIAL
+
+ASA5505-Beloyarskiy(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Beloyarskiy(config-network-object)#  end
+
+ASA5505-Beloyarskiy# 
+Building configuration...
+Cryptochecksum: 178dcf17 8c79ea89 0d0b961a 7eac90c1 
+
+15306 bytes copied in 1.470 secs (15306 bytes/sec)
+[OK]

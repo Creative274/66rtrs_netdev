@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Azanka(config)#  object network SERVERS-FILIAL
+
+ASA5505-Azanka(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Azanka(config-network-object)#  end
+
+ASA5505-Azanka# 
+Building configuration...
+Cryptochecksum: 3e875799 2823f9ee a916aa05 92fad975 
+
+16850 bytes copied in 1.360 secs (16850 bytes/sec)
+[OK]

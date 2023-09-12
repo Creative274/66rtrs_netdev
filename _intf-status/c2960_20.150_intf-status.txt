@@ -1,0 +1,28 @@
+Port      Name               Status       Vlan       Duplex  Speed Type 
+Gi0/1                        notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/2                        notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/3     To_VSAT            notconnect   101          auto   auto 10/100/1000BaseTX
+Gi0/4                        notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/5                        notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/6                        notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/7                        notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/8                        notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/9                        notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/10                       notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/11                       notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/12                       connected    1          a-full  a-100 10/100/1000BaseTX
+Gi0/13                       notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/14                       notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/15                       notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/16                       notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/17                       notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/18    AMS                notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/19    test_12_vlan       notconnect   12           auto   auto 10/100/1000BaseTX
+Gi0/20    Harmonik_1M        connected    12         a-full a-1000 10/100/1000BaseTX
+Gi0/21    To_CFM_SW_Main_con connected    66         a-full  a-100 10/100/1000BaseTX
+Gi0/22    5iZal              connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi0/23    to_sw_103          notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/24    From_Chameleon_POr notconnect   14           auto   auto 10/100/1000BaseTX
+Gi0/25    From_Servernaya    connected    trunk      a-full a-1000 1000BaseLX SFP
+Gi0/26    test               disabled     1170         auto   auto 1000BaseLX SFP
+Fa0                          notconnect   routed       auto   auto 10/100BaseTX

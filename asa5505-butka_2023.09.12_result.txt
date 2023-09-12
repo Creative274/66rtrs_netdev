@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Butka(config)#  object network SERVERS-FILIAL
+
+ASA5505-Butka(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Butka(config-network-object)#  end
+
+ASA5505-Butka# 
+Building configuration...
+Cryptochecksum: 60026053 89cdd4d4 4185abfa 5846210c 
+
+15179 bytes copied in 1.670 secs (15179 bytes/sec)
+[OK]

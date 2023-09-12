@@ -1,0 +1,5 @@
+c2960_kyshym-tech-sw01:
+  device_type: cisco_ios_telnet
+  host: 10.174.66.2
+  password: admin
+  secret: Admin

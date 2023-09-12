@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Barancha(config)#  object network SERVERS-FILIAL
+
+ASA5505-Barancha(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Barancha(config-network-object)#  end
+
+ASA5505-Barancha# 
+Building configuration...
+Cryptochecksum: f64e5717 01954290 5da4187d 3999810d 
+
+18357 bytes copied in 1.380 secs (18357 bytes/sec)
+[OK]

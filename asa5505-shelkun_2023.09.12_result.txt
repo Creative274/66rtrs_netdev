@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Schelkun(config)#  object network SERVERS-FILIAL
+
+ASA5505-Schelkun(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Schelkun(config-network-object)#  end
+
+ASA5505-Schelkun# 
+Building configuration...
+Cryptochecksum: f4c919ea 98d6eec7 f2328bdb d05252e3 
+
+14880 bytes copied in 1.330 secs (14880 bytes/sec)
+[OK]

@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Pervouralsk(config)#  object network SERVERS-FILIAL
+
+ASA5505-Pervouralsk(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Pervouralsk(config-network-object)#  end
+
+ASA5505-Pervouralsk# 
+Building configuration...
+Cryptochecksum: e07a03f5 32b74498 a190d1ac 5c3fc5bf 
+
+14519 bytes copied in 1.310 secs (14519 bytes/sec)
+[OK]

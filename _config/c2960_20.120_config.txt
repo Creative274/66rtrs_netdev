@@ -1,0 +1,258 @@
+Using 4852 out of 524288 bytes
+!
+! Last configuration change at 14:34:25 Yekt Mon May 17 2021 by velin
+! NVRAM config last updated at 14:34:26 Yekt Mon May 17 2021 by velin
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec localtime
+service password-encryption
+service unsupported-transceiver
+!
+hostname Switch_120_2960X
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+username velin privilege 15 secret 5 $1$IQsQ$GLt6K8KKMbpeWcHWou1/W0
+username raska.pv privilege 15 secret 5 $1$QuGj$oQkZ1RAcDY5fXXyEzyqAu0
+username sas privilege 15 secret 5 $1$Q78r$IUzUYKZ2hYWgYxbIQR8so.
+aaa new-model
+!
+!
+aaa authentication login default local
+aaa authorization exec default local 
+!
+!
+!
+!
+!
+!
+aaa session-id common
+clock timezone Yekt 5 0
+!
+!
+!
+no ip domain-lookup
+ip domain-name chelortpc
+ip name-server 10.174.10.1
+ip igmp snooping vlan 13 static 235.74.101.1 interface Gi0/14
+ip igmp snooping vlan 13 static 235.74.101.2 interface Gi0/14
+vtp mode transparent
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+!
+!
+!
+vlan configuration 13,62,64
+  no ip igmp snooping
+vlan internal allocation policy ascending
+!
+vlan 12-14 
+!
+vlan 15
+ name OOUS
+!
+vlan 16-19,62,64 
+!
+vlan 66
+ name Nimbra_from_CFM
+!
+vlan 96-98 
+!
+vlan 100
+ name Management
+!
+vlan 101 
+!
+vlan 103
+ name wifi
+!
+vlan 104-105,107-111,555,666,776,4008 
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+interface Port-channel1
+ description To_SG300
+ switchport trunk allowed vlan 1,14,18,96,100,101,103,108,4008
+ switchport mode trunk
+ load-interval 30
+!
+interface FastEthernet0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/1
+ description To_892_main
+ switchport trunk allowed vlan 1-11,15-63,65-4094
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+ description Ve0
+ switchport trunk allowed vlan 1,101,105
+ switchport mode trunk
+!
+interface GigabitEthernet0/3
+ description SNR_Element_UPS
+ switchport access vlan 100
+!
+interface GigabitEthernet0/4
+ description SL_2_mnmt
+ switchport access vlan 96
+!
+interface GigabitEthernet0/5
+ description Ve1
+ switchport trunk allowed vlan 1,101,111,555
+ switchport mode trunk
+ load-interval 30
+!
+interface GigabitEthernet0/6
+ switchport access vlan 17
+!
+interface GigabitEthernet0/7
+ description Ve2
+ switchport trunk allowed vlan 1,17,96
+ switchport mode trunk
+!
+interface GigabitEthernet0/8
+ description To_MT_Mirror
+!
+interface GigabitEthernet0/9
+ description MSR_POIB_Vlan
+ switchport access vlan 110
+!
+interface GigabitEthernet0/10
+ description 4et
+ switchport trunk allowed vlan 1,15,100,103
+ switchport mode trunk
+!
+interface GigabitEthernet0/11
+ description 480030_Eth2
+ switchport access vlan 98
+!
+interface GigabitEthernet0/12
+ description 3et
+ switchport trunk allowed vlan 1,15,18,100,103,555
+ switchport mode trunk
+!
+interface GigabitEthernet0/13
+ description SL_2
+ switchport access vlan 12
+ switchport trunk native vlan 12
+ switchport trunk allowed vlan 12,62
+ switchport mode trunk
+ load-interval 30
+!
+interface GigabitEthernet0/14
+ description SL_1_IPTS
+ switchport trunk native vlan 66
+ switchport trunk allowed vlan 13,14,66
+ switchport mode trunk
+ load-interval 30
+!
+interface GigabitEthernet0/15
+ switchport access vlan 96
+!
+interface GigabitEthernet0/16
+ description SL_1_IPTS_2_kab_integr
+ switchport access vlan 64
+!
+interface GigabitEthernet0/17
+ description To_SW_110
+ switchport mode access
+!
+interface GigabitEthernet0/18
+ description TO_Switch_110
+ switchport trunk allowed vlan 1-63,65-4094
+!
+interface GigabitEthernet0/19
+!
+interface GigabitEthernet0/20
+!
+interface GigabitEthernet0/21
+ description WiSi-1
+ switchport access vlan 14
+!
+interface GigabitEthernet0/22
+ description WiSi-2
+ switchport access vlan 14
+!
+interface GigabitEthernet0/23
+ description Po1_to_SG300
+ switchport trunk allowed vlan 1,14,18,96,100,101,103,108,4008
+ switchport mode trunk
+ channel-group 1 mode active
+!
+interface GigabitEthernet0/24
+ description Po1_to_SG300
+ switchport trunk allowed vlan 1,14,18,96,100,101,103,108,4008
+ switchport mode trunk
+ channel-group 1 mode active
+!
+interface GigabitEthernet0/25
+ description To_SW_103_Ceh
+ switchport trunk allowed vlan 1-13,15-4094
+ switchport mode trunk
+!
+interface GigabitEthernet0/26
+ description To_2-1
+ switchport trunk allowed vlan 1,12-14,18,19,62,64,66,100,101,103,105
+ switchport mode trunk
+ load-interval 30
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan100
+ ip address 10.174.20.120 255.255.255.0
+ no ip route-cache
+!
+ip default-gateway 10.174.20.1
+no ip http server
+no ip http secure-server
+!
+!
+ip access-list standard SNMPACL
+ permit 10.174.10.30
+ permit 10.174.10.20
+ deny   any
+!
+snmp-server community Bang55UP12 RO SNMPACL
+!
+!
+no vstack
+!
+line con 0
+ exec-timeout 0 0
+line vty 0 3
+ exec-timeout 0 0
+line vty 4
+line vty 5 15
+!
+!
+monitor session 1 source interface Gi0/9
+monitor session 1 destination interface Gi0/8
+ntp server 10.174.20.1
+end

@@ -1,0 +1,26 @@
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/6, Fa0/7, Fa0/8, Fa0/9, Fa0/10, Fa0/11, Fa0/14, Fa0/17, Fa0/18, Fa0/24, Gi0/2
+10   VLAN0010                         active    
+96   VLAN0096                         active    Fa0/12
+97   VLAN0097                         active    
+98   VLAN0098                         active    
+100  Management                       active    Fa0/1, Fa0/15, Fa0/16
+101  VLAN0101                         active    
+103  wifi                             active    Fa0/4, Fa0/13
+104  VLAN0104                         active    Fa0/21, Fa0/22
+107  VLAN0107                         active    
+108  VLAN0108                         active    
+109  VLAN0109                         active    Fa0/19, Fa0/20
+110  VLAN0110                         active    
+111  VLAN0111                         active    
+170  VLAN0170                         active    
+555  VLAN0555                         active    
+666  VLAN0666                         active    
+776  VLAN0776                         active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+4008 VLAN4008                         active    

@@ -1,0 +1,3 @@
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.174.20.1             0   7070.8b4c.9746  ARPA   Vlan100
+Internet  10.174.20.101           -   0027.90c2.47c1  ARPA   Vlan100

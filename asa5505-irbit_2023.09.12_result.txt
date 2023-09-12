@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Irbit(config)#  object network SERVERS-FILIAL
+
+ASA5505-Irbit(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Irbit(config-network-object)#  end
+
+ASA5505-Irbit# 
+Building configuration...
+Cryptochecksum: 63ed07b4 39d4bb08 860c43b3 9a20101e 
+
+14722 bytes copied in 1.530 secs (14722 bytes/sec)
+[OK]

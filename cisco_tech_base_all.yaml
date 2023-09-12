@@ -1,0 +1,15 @@
+c2960_kyshtym-tech-sw01:
+  device_type: cisco_ios_telnet
+  host: 10.174.66.2
+  password: admin
+  secret: Admin
+c2960_sokolovskoe-tech-sw01:
+  device_type: cisco_ios_telnet
+  host: 10.174.29.2
+  password: admin
+  secret: Admin
+c2960_bakal2-tech-sw01:
+  device_type: cisco_ios_telnet
+  host: 10.174.93.2
+  password: admin
+  secret: Admin

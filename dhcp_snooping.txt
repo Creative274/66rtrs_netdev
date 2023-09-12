@@ -1,0 +1,7 @@
+MacAddress          IpAddress        Lease(sec)  Type           VLAN  Interface
+------------------  ---------------  ----------  -------------  ----  --------------------
+0009BB3DD658   10.1.10.2        86250       dhcp-snooping   10    FastEthernet01
+0004A33E5B69   10.1.5.2         63951       dhcp-snooping   5     FastEthernet010
+0005B37E9B60   10.1.5.4         63253       dhcp-snooping   5     FastEthernet09
+0009BC3FA650   10.1.10.6        76260       dhcp-snooping   10    FastEthernet03
+Total number of bindings 4

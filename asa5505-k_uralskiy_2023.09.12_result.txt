@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Kamensk(config)#  object network SERVERS-FILIAL
+
+ASA5505-Kamensk(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Kamensk(config-network-object)#  end
+
+ASA5505-Kamensk# 
+Building configuration...
+Cryptochecksum: 019ae83b 2a8eee66 e094601a 095d66de 
+
+16977 bytes copied in 1.60 secs (16977 bytes/sec)
+[OK]

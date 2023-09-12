@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-NTagil(config)#  object network SERVERS-FILIAL
+
+ASA5505-NTagil(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-NTagil(config-network-object)#  end
+
+ASA5505-NTagil# 
+Building configuration...
+Cryptochecksum: 4bf459e6 c7885da1 7e34fb2b be578ab2 
+
+18200 bytes copied in 1.350 secs (18200 bytes/sec)
+[OK]

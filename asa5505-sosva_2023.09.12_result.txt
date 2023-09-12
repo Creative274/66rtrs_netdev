@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Sosva(config)#  object network SERVERS-FILIAL
+
+ASA5505-Sosva(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Sosva(config-network-object)#  end
+
+ASA5505-Sosva# 
+Building configuration...
+Cryptochecksum: 156a631f 7e40d7e1 f2e1abde e00d9e5b 
+
+14943 bytes copied in 1.390 secs (14943 bytes/sec)
+[OK]

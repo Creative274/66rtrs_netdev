@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Dvurechensk(config)#  object network SERVERS-FILIAL
+
+ASA5505-Dvurechensk(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Dvurechensk(config-network-object)#  end
+
+ASA5505-Dvurechensk# 
+Building configuration...
+Cryptochecksum: e98c3ff5 cfae91ca ac81fc80 5f371e8b 
+
+15210 bytes copied in 1.380 secs (15210 bytes/sec)
+[OK]

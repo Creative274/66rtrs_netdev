@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Rezh(config)#  object network SERVERS-FILIAL
+
+ASA5505-Rezh(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Rezh(config-network-object)#  end
+
+ASA5505-Rezh# 
+Building configuration...
+Cryptochecksum: ba5f426e e7d5c5df 2e5b44f5 219880d6 
+
+15206 bytes copied in 1.360 secs (15206 bytes/sec)
+[OK]

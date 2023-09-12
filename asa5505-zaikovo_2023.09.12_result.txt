@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Zaykovo(config)#  object network SERVERS-FILIAL
+
+ASA5505-Zaykovo(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Zaykovo(config-network-object)#  end
+
+ASA5505-Zaykovo# 
+Building configuration...
+Cryptochecksum: 9108ec0c c554ee13 cd8fb696 126dc796 
+
+17070 bytes copied in 1.360 secs (17070 bytes/sec)
+[OK]

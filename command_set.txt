@@ -1,0 +1,5 @@
+configure terminal
+object network SERVERS-FILIAL
+subnet 10.166.9.128 255.255.255.128
+end
+write memory

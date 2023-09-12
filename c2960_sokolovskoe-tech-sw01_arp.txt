@@ -1,0 +1,43 @@
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+ All    0100.0ccc.cccc    STATIC      CPU
+ All    0100.0ccc.cccd    STATIC      CPU
+ All    0180.c200.0000    STATIC      CPU
+ All    0180.c200.0001    STATIC      CPU
+ All    0180.c200.0002    STATIC      CPU
+ All    0180.c200.0003    STATIC      CPU
+ All    0180.c200.0004    STATIC      CPU
+ All    0180.c200.0005    STATIC      CPU
+ All    0180.c200.0006    STATIC      CPU
+ All    0180.c200.0007    STATIC      CPU
+ All    0180.c200.0008    STATIC      CPU
+ All    0180.c200.0009    STATIC      CPU
+ All    0180.c200.000a    STATIC      CPU
+ All    0180.c200.000b    STATIC      CPU
+ All    0180.c200.000c    STATIC      CPU
+ All    0180.c200.000d    STATIC      CPU
+ All    0180.c200.000e    STATIC      CPU
+ All    0180.c200.000f    STATIC      CPU
+ All    0180.c200.0010    STATIC      CPU
+ All    ffff.ffff.ffff    STATIC      CPU
+   1    0002.6306.15ef    DYNAMIC     Fa0/4
+   1    0002.6306.5c18    DYNAMIC     Fa0/24
+   1    0004.5f93.18fc    DYNAMIC     Fa0/15
+   1    000c.a208.3cef    DYNAMIC     Fa0/23
+   1    000c.a224.6bab    DYNAMIC     Fa0/17
+   1    0013.5900.4e3e    DYNAMIC     Fa0/1
+   1    001e.c0c6.a185    DYNAMIC     Fa0/22
+   1    001f.f200.0000    DYNAMIC     Fa0/3
+   1    0020.85e3.c5e4    DYNAMIC     Fa0/2
+   1    0023.be5e.6f64    DYNAMIC     Fa0/13
+   1    0045.bf85.0293    DYNAMIC     Fa0/14
+   1    0045.fbc4.66af    DYNAMIC     Fa0/5
+   1    0090.e867.d836    DYNAMIC     Fa0/20
+   1    00a2.c1c2.9814    DYNAMIC     Fa0/21
+   1    1e30.6c83.7b67    DYNAMIC     Fa0/6
+   1    70b3.d576.07e9    DYNAMIC     Fa0/11
+   1    7c6a.c3a0.241a    DYNAMIC     Fa0/18
+Total Mac Addresses for this criterion: 37

@@ -1,0 +1,73 @@
+    cisco_router_d['c2960_20.107'] = {
+        'device_type': 'cisco_ios_telnet',
+        'host': '10.174.20.107',
+        'username': 'velin',
+        'password': 'ranger1818',
+        'secret': 'xtndthuitcnjt'}
+
+    cisco_router_d['c2960_20.113'] = {
+        'device_type': 'cisco_ios_telnet',
+        'host': '10.174.20.113',
+        'username': 'velin',
+        'password': 'ranger1818',
+        'secret': 'xtndthuitcnjt'}
+
+    cisco_router_d['c2960_20.120'] = {
+        'device_type': 'cisco_ios_telnet',
+        'host': '10.174.20.120',
+        'username': 'velin',
+        'password': 'ranger1818',
+        'secret': 'xtndthuitcnjt'}
+
+    cisco_router_d['c2960_20.150'] = {
+        'device_type': 'cisco_ios_telnet',
+        'host': '10.174.20.150',
+        'username': 'velin',
+        'password': 'ranger1818',
+        'secret': 'xtndthuitcnjt'}
+
+    cisco_router_d['c2960_20.111'] = {
+        'device_type': 'cisco_ios_telnet',
+        'host': '10.174.20.111',
+        'username': 'velin',
+        'password': 'ranger1818',
+        'secret': 'xtndthuitcnjt'}
+
+    cisco_router_d['c2960_20.112'] = {
+        'device_type': 'cisco_ios_telnet',
+        'host': '10.174.20.112',
+        'username': 'velin',
+        'password': 'ranger1818',
+        'secret': 'xtndthuitcnjt'}
+
+    cisco_router_d['c2960_20.103'] = {
+        'device_type': 'cisco_ios_telnet',
+        'host': '10.174.20.103',
+        'username': 'velin',
+        'password': 'ranger1818',
+        'secret': 'xtndthuitcnjt'}
+
+    cisco_router_d['c2960_20.102'] = {
+        'device_type': 'cisco_ios_telnet',
+        'host': '10.174.20.102',
+        'username': 'velin',
+        'password': 'ranger1818',
+        'secret': 'xtndthuitcnjt'}
+
+    cisco_router_d['c2960_20.101'] = {
+        'device_type': 'cisco_ios_telnet',
+        'host': '10.174.20.101',
+        'username': 'velin',
+        'password': 'ranger1818',
+        'secret': 'xtndthuitcnjt'}
+
+    cisco_router_d['c2960_20.100'] = {
+        'device_type': 'cisco_ios_telnet',
+        'host': '10.174.20.100',
+        'username': 'velin',
+        'password': 'ranger1818',
+        'secret': 'xtndthuitcnjt'}
+
+    with open('cisco_base.yaml', 'w') as yaml_file:
+        yaml.dump(cisco_router_d, yaml_file)
+

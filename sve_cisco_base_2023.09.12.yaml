@@ -1,0 +1,21 @@
+asa5505-krasnoufimsk:
+  device_type: cisco_ios
+  host: 10.166.4.38
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-nizhneirginskoe:
+  device_type: cisco_ios
+  host: 10.166.4.66
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22
+asa5505-afanasievskoe:
+  device_type: cisco_ios
+  host: 10.166.4.126
+  password: SnmP@)23
+  secret: CiscO@)23
+  username: rtrs_admin
+  port: 22

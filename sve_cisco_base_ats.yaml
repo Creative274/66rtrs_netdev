@@ -1,0 +1,7 @@
+SVE-GURZ-CUCME-C3845:
+  device_type: cisco_ios
+  host: 10.166.100.1
+  password: SnmP@)23
+  secret: cisco
+  username: rtrs_admin
+  port: 22

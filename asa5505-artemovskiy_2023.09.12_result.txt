@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-Artemovskiy(config)#  object network SERVERS-FILIAL
+
+ASA5505-Artemovskiy(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-Artemovskiy(config-network-object)#  end
+
+ASA5505-Artemovskiy# 
+Building configuration...
+Cryptochecksum: 7d43652e 3d235ef6 5728d846 06e51dba 
+
+17388 bytes copied in 1.350 secs (17388 bytes/sec)
+[OK]

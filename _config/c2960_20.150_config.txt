@@ -1,0 +1,218 @@
+Using 3885 out of 524288 bytes
+!
+! Last configuration change at 09:18:20 UTC Mon May 17 2021 by velin
+! NVRAM config last updated at 09:18:39 UTC Mon May 17 2021 by velin
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname SW-150
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+username velin privilege 15 secret 5 $1$IQsQ$GLt6K8KKMbpeWcHWou1/W0
+username admin privilege 15 password 0 xtndthuitcnjt
+username vkachalov privilege 15 secret 5 $1$ZM1r$u7TmP.K9B6k70kkS.PgTi0
+username sas privilege 15 secret 5 $1$Q78r$IUzUYKZ2hYWgYxbIQR8so.
+aaa new-model
+!
+!
+aaa authentication login default local
+aaa authorization exec default local 
+!
+!
+!
+!
+!
+!
+aaa session-id common
+!
+!
+!
+vtp mode transparent
+!
+!
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-3106395264
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-3106395264
+ revocation-check none
+ rsakeypair TP-self-signed-3106395264
+!
+!
+crypto pki certificate chain TP-self-signed-3106395264
+ certificate self-signed 01 nvram:IOS-Self-Sig#1.cer
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+!
+!
+!
+vlan configuration 13,62,64
+  no ip igmp snooping
+vlan internal allocation policy ascending
+!
+vlan 12-14,18-19,62,64,66,100-101,103,105,110,130,555,1170 
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0
+ no ip address
+!
+interface GigabitEthernet0/1
+ switchport mode trunk
+ load-interval 30
+!
+interface GigabitEthernet0/2
+ load-interval 30
+!
+interface GigabitEthernet0/3
+ description To_VSAT
+ switchport access vlan 101
+ load-interval 30
+!
+interface GigabitEthernet0/4
+ load-interval 30
+!
+interface GigabitEthernet0/5
+ load-interval 30
+!
+interface GigabitEthernet0/6
+ load-interval 30
+!
+interface GigabitEthernet0/7
+ load-interval 30
+!
+interface GigabitEthernet0/8
+ load-interval 30
+!
+interface GigabitEthernet0/9
+ load-interval 30
+!
+interface GigabitEthernet0/10
+ load-interval 30
+!
+interface GigabitEthernet0/11
+ load-interval 30
+!
+interface GigabitEthernet0/12
+ load-interval 30
+!
+interface GigabitEthernet0/13
+ load-interval 30
+!
+interface GigabitEthernet0/14
+ load-interval 30
+!
+interface GigabitEthernet0/15
+ load-interval 30
+!
+interface GigabitEthernet0/16
+ load-interval 30
+!
+interface GigabitEthernet0/17
+ load-interval 30
+!
+interface GigabitEthernet0/18
+ description AMS
+ load-interval 30
+!
+interface GigabitEthernet0/19
+ description test_12_vlan
+ switchport access vlan 12
+ switchport mode access
+ load-interval 30
+ no cdp enable
+ spanning-tree portfast
+!
+interface GigabitEthernet0/20
+ description Harmonik_1M
+ switchport access vlan 12
+ switchport mode access
+ load-interval 30
+ no cdp enable
+!
+interface GigabitEthernet0/21
+ description To_CFM_SW_Main_controlNimbra
+ switchport access vlan 66
+ load-interval 30
+ no cdp enable
+ spanning-tree portfast
+!
+interface GigabitEthernet0/22
+ description 5iZal
+ switchport trunk allowed vlan 1,13,18,19,62,64,100,101,103,105
+ switchport mode trunk
+ load-interval 30
+!
+interface GigabitEthernet0/23
+ description to_sw_103
+ switchport trunk allowed vlan 19
+ switchport mode trunk
+ load-interval 30
+!
+interface GigabitEthernet0/24
+ description From_Chameleon_POrt3
+ switchport access vlan 14
+ switchport mode access
+ load-interval 30
+ no cdp enable
+!
+interface GigabitEthernet0/25
+ description From_Servernaya
+ switchport trunk allowed vlan 1,12-14,18,62,64,66,100,101,103,105
+ switchport mode trunk
+ load-interval 30
+!
+interface GigabitEthernet0/26
+ description test
+ switchport access vlan 1170
+ switchport mode access
+ load-interval 30
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan100
+ ip address 10.174.20.150 255.255.255.0
+!
+ip default-gateway 10.174.20.1
+ip http server
+ip http secure-server
+!
+!
+ip access-list standard SNMPACL
+ permit 10.174.10.30
+ permit 10.174.10.20
+ deny   any
+!
+snmp-server community Bang55UP12 RO SNMPACL
+!
+!
+no vstack
+!
+line con 0
+line vty 5 15
+!
+end

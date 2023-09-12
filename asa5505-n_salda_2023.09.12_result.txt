@@ -1,0 +1,14 @@
+ configure terminal
+
+ASA5505-NSalda(config)#  object network SERVERS-FILIAL
+
+ASA5505-NSalda(config-network-object)# subnet 10.166.9.128 255.255.255.128
+
+ASA5505-NSalda(config-network-object)#  end
+
+ASA5505-NSalda# 
+Building configuration...
+Cryptochecksum: db219984 9bb54df6 ede99dbe 00ae59df 
+
+14953 bytes copied in 1.310 secs (14953 bytes/sec)
+[OK]
